@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model ThreeJS</title>
+    <style >
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+             /* Set body height to 100% of viewport height */
+            
+            
+        }
+
+        p {
+            text-align: center;
+            font-size: 100px;
+            margin-top: 20px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+
+
+        .button-container button {
+            width: 25%;
+            height: 100%;
+            background-color: #b9b9b9;
+            padding: 10px 20px;
+            font-size: 100px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .webgl {
+            display: block;
+            margin: 0 auto;
+            background-color: #b9b9b9;
+        
+            
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            p {
+                font-size: 18px;
+            }
+            body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+            
+        }
+
+            .button-container button {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body >
+    
+    <div id="div_3d">
+        <canvas class="webgl"></canvas>
+    </div>
+    
+
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+ 
+
+</body>
+</html>
